@@ -1,7 +1,7 @@
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 .bs-header {
-  padding: 60px 15px 0px; /* side padding builds on .container 15px, so 30px */
+  padding: 100px 15px 0px; /* side padding builds on .container 15px, so 30px */
   font-size: 16px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.15);

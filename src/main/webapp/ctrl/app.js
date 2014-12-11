@@ -39,10 +39,54 @@ myApp.controller('LoginCtrl', function($scope, $modalInstance, items){
 	}
 });
 
-
-myApp.controller('SearchCtrl', function($scope){
+myApp.controller('CarouselCtrl', function($scope){
+	$scope.myInterval = 5000;
+	var slides = $scope.slides = [];
 	
+	$scope.addSlide = function() {
+	    var newWidth = 600 + slides.length + 1;
+	    slides.push({
+	      image: 'http://placekitten.com/' + newWidth + '/300',
+	      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' + ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+	    });
+	};
+
+	for (var i=0; i<4; i++) {
+	    $scope.addSlide();
+	}
 });
+
+myApp.controller('CarouselBrandCtrl', function($scope){
+	$scope.myInterval = 5000;
+	var slides = $scope.slides = [];
+	
+	$scope.addSlide = function() {
+	    var newWidth = 600 + slides.length + 1;
+	    slides.push({
+	      image: 'http://placekitten.com/' + newWidth + '/100',
+	      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' + ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+	    });
+	};
+
+	for (var i=0; i<4; i++) {
+	    $scope.addSlide();
+	}
+})
+
+
+myApp.controller('SearchTabsCtrl', function($scope){
+	$scope.tabs = [
+       { title:'Dynamic Title 1', content:'Dynamic content 1' },
+       { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
+     ];
+
+     $scope.alertMe = function() {
+       setTimeout(function() {
+         $window.alert('You\'ve selected the alert tab!');
+       });
+     };
+});
+
 
 
 myApp.controller('TestCtrl', function($scope){

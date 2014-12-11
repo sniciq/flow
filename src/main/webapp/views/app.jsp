@@ -34,12 +34,10 @@
 		            </div>
 		            <nav class="hidden-xs">
 		                <ul class="nav navbar-nav">
-		                    <a href="#top" role="button" class="navbar-brand">
-		                        欢迎来到{{sysname}}
-		                    </a>
+		                    <a href="#top" role="button" class="navbar-brand">欢迎来到我的{{sysname}}</a>
 		                    <li class="dropdown" dropdown>
 		                        <a role="button" class="dropdown-toggle" dropdown-toggle>
-		                            我的菜单 <b class="caret"></b>
+		                            	我的菜单 <b class="caret"></b>
 		                        </a>
 		                        <ul class="dropdown-menu">
 		                            <li><a href="#accordion">入库</a></li>
@@ -48,29 +46,61 @@
 		                            <li><a href="#accordion">反馈</a></li>
 		                        </ul>
 		                    </li>
-		                    <li><a href="#getting_started">Getting started</a></li>
+		                    <li><a href="#getting_started">我的物流</a></li>
+		                    <li><a href="#getting_started">我要发货</a></li>
+		                    <li><a href="#getting_started">查询路线</a></li>
+		                    <li><a href="#getting_started">查询网点</a></li>
+		                    <li><a href="#getting_started">物流跟踪</a></li>
 		                </ul>
 		            </nav>
 		            <ul class="nav navbar-nav navbar-right">
 		            	<li><a ng-click="openLogin()">登录</a></li>
+		            	<li><a ng-click="openLogin()">免费注册</a></li>
 		            </ul>
 		        </div>
 		    </div>
 		</header>
 		<div class="header-placeholder"></div>
 		<div role="main">
-			<header class="bs-header text-center" id="overview">
-				<div class="container" ng-controller="SearchCtrl">
-					<form class="form-horizontal" role="form">
-						<div class="form-group">
-							<div class="col-sm-10">
-								<input type="text" class="form-control" >
-							</div>
-							<button type="button" class="btn btn-default col-sm-2">搜索</button>
-						</div>
-					</form>
+			<div class="row" style="padding-top: 55px;">
+				<div class="col-md-4" ng-controller="SearchTabsCtrl">
+					<tabset vertical="false" justified="false" type="tabs">
+					  <tab heading="查询线路">Justified content</tab>
+					  <tab heading="查询网点">Short Labeled Justified content</tab>
+					  <tab heading="物流跟踪">Long Labeled Justified content</tab>
+					</tabset>
+					 <button type="button" class="btn btn-primary pull-right">查询</button>
 				</div>
-			</header>
+				<div class="col-md-4" ng-controller="CarouselCtrl">
+					<div style="height: 305px">
+						<carousel interval="myInterval">
+						  <slide ng-repeat="slide in slides" active="slide.active">
+						    <img ng-src="{{slide.image}}" style="margin:auto;">
+						    <div class="carousel-caption">
+						      <h4>Slide {{$index}}</h4>
+						      <p>{{slide.text}}</p>
+						    </div>
+						  </slide>
+						</carousel>
+					</div>
+				</div>
+				<div class="col-md-4">
+					其它信息
+				</div>
+			</div>
+			<div class="row" ng-controller="CarouselBrandCtrl">
+				<div style="height: 60px">
+					<carousel interval="myInterval">
+					  <slide ng-repeat="slide in slides" active="slide.active">
+					    <img ng-src="{{slide.image}}" style="margin:auto;">
+					    <div class="carousel-caption">
+					      <h4>Slide {{$index}}</h4>
+					      <p>{{slide.text}}</p>
+					    </div>
+					  </slide>
+					</carousel>
+				</div>
+			</div>
 		
 			<div ng-controller="TestCtrl">
 				<h2>{{name}}</h2>
