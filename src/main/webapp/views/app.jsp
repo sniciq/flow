@@ -20,7 +20,7 @@
 	</head>
 
 	<body ng-controller="MainCtrl">
-		<header class="navbar navbar-default navbar-fixed-top">
+		<header class="navbar navbar-inverse navbar-fixed-top">
 		    <div class="navbar-inner">
 		        <div class="container">
 		            <div class="navbar-header">
@@ -56,23 +56,44 @@
 		            <ul class="nav navbar-nav navbar-right">
 		            	<li><a ng-click="openLogin()">登录</a></li>
 		            	<li><a ng-click="openLogin()">免费注册</a></li>
+		            	<li><a ng-click="openLogin()">意见和建议</a></li>
 		            </ul>
 		        </div>
 		    </div>
 		</header>
 		<div class="header-placeholder"></div>
 		<div role="main">
-			<div class="row" style="padding-top: 55px;">
-				<div class="col-md-4" ng-controller="SearchTabsCtrl">
-					<tabset vertical="false" justified="false" type="tabs">
-					  <tab heading="查询线路">Justified content</tab>
-					  <tab heading="查询网点">Short Labeled Justified content</tab>
-					  <tab heading="物流跟踪">Long Labeled Justified content</tab>
-					</tabset>
-					 <button type="button" class="btn btn-primary pull-right">查询</button>
+			<div class="container">
+				<div class="row" style="padding-top: 60px;">
+					<div class="col-md-4" ng-controller="SearchTabsCtrl">
+						<tabset vertical="false" justified="false" type="tabs">
+						  <tab heading="查询线路">Justified content</tab>
+						  <tab heading="查询网点">Short Labeled Justified content</tab>
+						  <tab heading="物流跟踪">Long Labeled Justified content</tab>
+						</tabset>
+						 <button type="button" class="btn btn-primary pull-right">查询</button>
+					</div>
+					<div class="col-md-4" ng-controller="CarouselCtrl">
+						<div>
+							<carousel interval="myInterval">
+							  <slide ng-repeat="slide in slides" active="slide.active">
+							    <img ng-src="{{slide.image}}" style="margin:auto;">
+							    <div class="carousel-caption">
+							      <h4>Slide {{$index}}</h4>
+							      <p>{{slide.text}}</p>
+							    </div>
+							  </slide>
+							</carousel>
+						</div>
+					</div>
+					<div class="col-md-4">
+						其它信息
+					</div>
 				</div>
-				<div class="col-md-4" ng-controller="CarouselCtrl">
-					<div style="height: 305px">
+				
+				<!--  
+				<div class="row" ng-controller="CarouselBrandCtrl">
+					<div style="height: 60px">
 						<carousel interval="myInterval">
 						  <slide ng-repeat="slide in slides" active="slide.active">
 						    <img ng-src="{{slide.image}}" style="margin:auto;">
@@ -84,26 +105,78 @@
 						</carousel>
 					</div>
 				</div>
-				<div class="col-md-4">
-					其它信息
+				-->
+				<div class="row" style="padding-top: 10px;">
+					<div class="col-md-8">
+						<div class="panel panel-default">
+							<div class="panel-heading">您搜索过的线路</div>
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item">北京-上海</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">新入驻品牌物流商</div>
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item">Cras justo odio</li>
+									<li class="list-group-item">Dapibus ac facilisis in</li>
+									<li class="list-group-item">Morbi leo risus</li>
+									<li class="list-group-item">Porta ac consectetur ac</li>
+									<li class="list-group-item">Vestibulum at eros</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="row" ng-controller="CarouselBrandCtrl">
-				<div style="height: 60px">
-					<carousel interval="myInterval">
-					  <slide ng-repeat="slide in slides" active="slide.active">
-					    <img ng-src="{{slide.image}}" style="margin:auto;">
-					    <div class="carousel-caption">
-					      <h4>Slide {{$index}}</h4>
-					      <p>{{slide.text}}</p>
-					    </div>
-					  </slide>
-					</carousel>
+				
+				<div class="row" style="padding-top: 10px;padding-left: 15px;padding-right: 15px;">
+					<div class="panel panel-default">
+						<div class="panel-heading">活动展示</div>
+						<div class="panel-body">
+							活动展示信息区
+						</div>
+					</div>
 				</div>
-			</div>
-		
-			<div ng-controller="TestCtrl">
-				<h2>{{name}}</h2>
+				
+				<div class="row" style="padding-top: 10px;">
+					<div class="col-md-8">
+						<div class="panel panel-default">
+							<div class="panel-heading">热门路线</div>
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item">北京-上海</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">热门城市</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-2 col-md-3 col-lg-3 ">北京</div>
+									<div class="col-sm-2 col-md-3 col-lg-3 ">北京</div>
+									<div class="col-sm-2 col-md-3 col-lg-3 ">北京</div>
+									<div class="col-sm-2 col-md-3 col-lg-3 ">北京</div>
+									<div class="col-sm-2 col-md-3 col-lg-3 ">北京</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row" style="padding-top: 10px;padding-left: 15px;padding-right: 15px;">
+					<div class="panel panel-default">
+						<div class="panel-heading">友情链接</div>
+						<div class="panel-body">
+							友情链接信息区
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
