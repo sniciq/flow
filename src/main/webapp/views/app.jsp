@@ -9,13 +9,13 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		
-		<link rel="stylesheet" href="${ctx}/resources/css/bootstrap-3.1.1/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="${ctx}/resources/css/bootstrap/3.3.0/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="${ctx}/resources/css/app.css"/>
 		<script type="text/javascript">
 			var ctx = '${ctx}';
 		</script>
-		<script src="${ctx}/resources/js/angular.min.js"></script>
-		<script src="${ctx}/resources/js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+		<script src="${ctx}/resources/js/angular/angular.min.js"></script>
+		<script src="${ctx}/resources/js/angular/ui-bootstrap-tpls-0.12.0.min.js"></script>
     	<script src="${ctx}/ctrl/app.js"></script>
 	</head>
 
@@ -65,13 +65,13 @@
 		<div role="main">
 			<div class="container">
 				<div class="row" style="padding-top: 60px;">
-					<div class="col-md-4" ng-controller="SearchTabsCtrl">
+					<div class="col-md-5" ng-controller="SearchTabsCtrl">
 						<tabset vertical="false" justified="false" type="tabs">
 						  <tab heading="查询线路">Justified content</tab>
 						  <tab heading="查询网点">Short Labeled Justified content</tab>
 						  <tab heading="物流跟踪">Long Labeled Justified content</tab>
 						</tabset>
-						 <button type="button" class="btn btn-primary pull-right">查询</button>
+						<button type="button" class="btn btn-primary pull-right">查询</button>
 					</div>
 					<div class="col-md-4" ng-controller="CarouselCtrl">
 						<div>
@@ -86,7 +86,7 @@
 							</carousel>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-3">
 						其它信息
 					</div>
 				</div>
@@ -107,26 +107,35 @@
 				</div>
 				-->
 				<div class="row" style="padding-top: 10px;">
-					<div class="col-md-8">
+					<div class="col-md-9">
 						<div class="panel panel-default">
 							<div class="panel-heading">您搜索过的线路</div>
 							<div class="panel-body">
-								<ul class="list-group">
-									<li class="list-group-item">北京-上海</li>
-								</ul>
+								<div class="row">
+									<div class="col-sm-12 col-md-6 col-lg-6 ">
+										<ul class="nav nav-pills nav-stacked" role="tablist">
+											<li role="presentation"><a>深圳市&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;上海市&nbsp;<b>0.44</b>元/公斤&nbsp;120元/立方&nbsp;<span class="pull-right">新邦物流</span></a></li>
+										</ul>
+									</div>
+									<div class="col-sm-12 col-md-6 col-lg-6 ">
+										<ul class="nav nav-pills nav-stacked" role="tablist">
+											<li role="presentation"><a>深圳市&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;上海市&nbsp;<b>0.44</b>元/公斤&nbsp;120元/立方&nbsp;新邦物流</a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-heading">新入驻品牌物流商</div>
 							<div class="panel-body">
-								<ul class="list-group">
-									<li class="list-group-item">Cras justo odio</li>
-									<li class="list-group-item">Dapibus ac facilisis in</li>
-									<li class="list-group-item">Morbi leo risus</li>
-									<li class="list-group-item">Porta ac consectetur ac</li>
-									<li class="list-group-item">Vestibulum at eros</li>
+								<ul class="nav nav-pills nav-stacked" role="tablist">
+									<li role="presentation"><a>兴铁物流 珍惜所托，承载信任！</a></li>
+									<li role="presentation"><a>兴铁物流 珍惜所托，承载信任！</a></li>
+									<li role="presentation"><a>兴铁物流 珍惜所托，承载信任！</a></li>
+									<li role="presentation"><a>兴铁物流 珍惜所托，承载信任！</a></li>
+									<li role="presentation"><a>兴铁物流 珍惜所托，承载信任！</a></li>
 								</ul>
 							</div>
 						</div>
@@ -143,17 +152,34 @@
 				</div>
 				
 				<div class="row" style="padding-top: 10px;">
-					<div class="col-md-8">
+					<div class="col-md-9">
 						<div class="panel panel-default">
 							<div class="panel-heading">热门路线</div>
 							<div class="panel-body">
-								<ul class="list-group">
-									<li class="list-group-item">北京-上海</li>
-								</ul>
+								<div class="row">
+									<div class="col-sm-12 col-md-6 col-lg-6 ">
+										<ul class="nav nav-pills nav-stacked" role="tablist">
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-12 col-md-6 col-lg-6 ">
+										<ul class="nav nav-pills nav-stacked" role="tablist">
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+											<li role="presentation"><a>深圳市&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;&nbsp;上海市&nbsp;&nbsp;<b>0.44</b>元/公斤&nbsp;&nbsp;120元/立方</a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="panel panel-default">
 							<div class="panel-heading">热门城市</div>
 							<div class="panel-body">
@@ -173,7 +199,17 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">友情链接</div>
 						<div class="panel-body">
-							友情链接信息区
+							<div class="row">
+								<div class="col-sm-2 col-md-3 col-lg-3 ">国家交通运输物流公共信息平台 </div>
+								<div class="col-sm-2 col-md-3 col-lg-3 ">国家交通运输物流公共信息平台 </div>
+								<div class="col-sm-2 col-md-3 col-lg-3 ">国家交通运输物流公共信息平台 </div>
+								<div class="col-sm-2 col-md-3 col-lg-3 ">国家交通运输物流公共信息平台 </div>
+								<div class="col-sm-2 col-md-3 col-lg-3 ">国家交通运输物流公共信息平台 </div>
+								<div class="col-sm-2 col-md-3 col-lg-3 ">国家交通运输物流公共信息平台 </div>
+								<div class="col-sm-2 col-md-3 col-lg-3 ">国家交通运输物流公共信息平台 </div>
+								<div class="col-sm-2 col-md-3 col-lg-3 ">国家交通运输物流公共信息平台 </div>
+								
+							</div>
 						</div>
 					</div>
 				</div>

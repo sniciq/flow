@@ -87,9 +87,8 @@ myApp.controller('SearchTabsCtrl', function($scope){
      };
 });
 
-
-
 myApp.controller('TestCtrl', function($scope){
 	$scope.name = 'Hello world';
 	
 });
+
