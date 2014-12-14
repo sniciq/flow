@@ -1,6 +1,10 @@
-<%@ page pageEncoding="utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<%@page import="java.util.Date"%>
+<%@ page language="java" contentType="text/html;charset=utf-8"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+
+<c:set var="ctx" value="${pageContext.request.contextPath}"></c:set>
+<c:set var="sysVersion" value="${applicationScope.SysVersion}"></c:set>
 
 <!DOCTYPE html>
 <html ng-app="myApp">
@@ -11,12 +15,15 @@
 		
 		<link rel="stylesheet" href="${ctx}/resources/css/bootstrap/3.3.0/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="${ctx}/resources/css/app.css"/>
+		
 		<script type="text/javascript">
 			var ctx = '${ctx}';
+			var sysVersion = '${sysVersion}';
 		</script>
-		<script src="${ctx}/resources/js/angular/angular.min.js"></script>
+		
+		<script src="${ctx}/resources/js/angular/angular.js"></script>
 		<script src="${ctx}/resources/js/angular/ui-bootstrap-tpls-0.12.0.min.js"></script>
-    	<script src="${ctx}/ctrl/app.js"></script>
+    	<script src="${ctx}/ctrl/app.js?v=${version}"></script>
 	</head>
 
 	<body ng-controller="MainCtrl">
@@ -55,7 +62,7 @@
 		            </nav>
 		            <ul class="nav navbar-nav navbar-right">
 		            	<li><a ng-click="openLogin()">登录</a></li>
-		            	<li><a ng-click="openLogin()">免费注册</a></li>
+		            	<li><a ng-click="regist()">免费注册</a></li>
 		            	<li><a ng-click="openLogin()">意见和建议</a></li>
 		            </ul>
 		        </div>

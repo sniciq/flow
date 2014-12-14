@@ -7,7 +7,7 @@ myApp.controller('MainCtrl', function($scope, $modal, $log){
 	
 	$scope.openLogin = function() {
 		var modalInstance = $modal.open({
-			templateUrl: ctx + '/views/login.tpl.html',
+			templateUrl: 'views/login.tpl.html?' + sysVersion,
 			controller: 'LoginCtrl',
 			backdrop: 'static',
 			size: 'sm',
@@ -22,6 +22,20 @@ myApp.controller('MainCtrl', function($scope, $modal, $log){
 			$scope.selected = selectedItem;
 		}, function() {
 			$log.info('Modal dismissed at: ' + new Date());
+		});
+	};
+	
+	$scope.regist = function() {
+		var modalInstance = $modal.open({
+			templateUrl: 'views/regist.tpl.html?' + sysVersion,
+			controller: 'SelectRegistCtrl',
+			backdrop: 'static',
+			size: 'sm',
+			resolve: {
+				items: function() {
+					return $scope.items;
+				}
+			}
 		});
 	}
 });
@@ -38,6 +52,21 @@ myApp.controller('LoginCtrl', function($scope, $modalInstance, items){
 		$modalInstance.dismiss('cancel');
 	}
 });
+myApp.controller('SelectRegistCtrl', function($scope, $modalInstance, items){
+	$scope.items = items;
+	$scope.selected = {
+			item: $scope.items[0]
+	};
+	$scope.registCompany = function() {
+		window.open('views/regist_company.html');
+	};
+	$scope.registPerson = function() {
+		window.open('views/regist_person.html');
+	};
+	$scope.cancel = function() {
+		$modalInstance.dismiss('cancel');
+	}
+});
 
 myApp.controller('CarouselCtrl', function($scope){
 	$scope.myInterval = 5000;
@@ -46,7 +75,7 @@ myApp.controller('CarouselCtrl', function($scope){
 	$scope.addSlide = function() {
 		var newWidth = 300 + slides.length;
 	    slides.push({
-	      image: ctx + '/resources/images/' + newWidth + '.jpeg',
+	      image: 'resources/images/' + newWidth + '.jpeg',
 	      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' + ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
 	    });
 	};
@@ -63,7 +92,7 @@ myApp.controller('CarouselBrandCtrl', function($scope){
 //	$scope.addSlide = function() {
 //	    var newWidth = 300 + slides.length;
 //	    slides.push({
-//	      image: ctx + '/resources/images/' + newWidth + '.jpeg',
+//	      image: 'resources/images/' + newWidth + '.jpeg',
 //	      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' + ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
 //	    });
 //	};
