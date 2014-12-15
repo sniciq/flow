@@ -8,4 +8,9 @@ RouteSearchApp.controller('RouteSearchCtrl', function($scope, $modal, $log){
 	$scope.cityBlur = function() {
 		console.log(2)
 	}
+	
+	$scope.toHome = function() {
+		window.location.href = ctx + '/';
+	}
+	
 });

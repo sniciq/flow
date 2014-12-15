@@ -40,7 +40,7 @@ myApp.controller('MainCtrl', function($scope, $modal, $log){
 	};
 	
 	$scope.openRouteSearch = function() {
-		window.open('views/route_search.jsp');
+		window.open('route/search');
 	}
 });
 myApp.controller('LoginCtrl', function($scope, $modalInstance, items){

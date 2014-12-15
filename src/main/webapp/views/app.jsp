@@ -41,7 +41,12 @@
 		            </div>
 		            <nav class="hidden-xs">
 		                <ul class="nav navbar-nav">
-		                    <a href="#top" role="button" class="navbar-brand">欢迎来到我的{{sysname}}</a>
+		                    <a role="button" class="navbar-brand active">360 flow</a>
+		                    <li><a ng-click="openRouteSearch();">查询路线</a></li>
+		                    <li><a href="#getting_started">我的物流</a></li>
+		                    <li><a href="#getting_started">我要发货</a></li>
+		                    <li><a href="#getting_started">查询网点</a></li>
+		                    <li><a href="#getting_started">物流跟踪</a></li>
 		                    <li class="dropdown" dropdown>
 		                        <a role="button" class="dropdown-toggle" dropdown-toggle>
 		                            	我的菜单 <b class="caret"></b>
@@ -53,11 +58,6 @@
 		                            <li><a href="#accordion">反馈</a></li>
 		                        </ul>
 		                    </li>
-		                    <li><a href="#getting_started">我的物流</a></li>
-		                    <li><a href="#getting_started">我要发货</a></li>
-		                    <li><a ng-click="openRouteSearch();">查询路线</a></li>
-		                    <li><a href="#getting_started">查询网点</a></li>
-		                    <li><a href="#getting_started">物流跟踪</a></li>
 		                </ul>
 		            </nav>
 		            <ul class="nav navbar-nav navbar-right">
@@ -126,7 +126,7 @@
 									</div>
 									<div class="col-sm-12 col-md-6 col-lg-6 ">
 										<ul class="nav nav-pills nav-stacked" role="tablist">
-											<li role="presentation"><a>深圳市&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;上海市&nbsp;<b>0.44</b>元/公斤&nbsp;120元/立方&nbsp;新邦物流</a></li>
+											<li role="presentation"><a>深圳市&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;上海市&nbsp;<b>0.44</b>元/公斤&nbsp;120元/立方&nbsp;<span class="pull-right">新邦物流</span></a></li>
 										</ul>
 									</div>
 								</div>
@@ -151,9 +151,20 @@
 				
 				<div class="row" style="padding-top: 10px;padding-left: 15px;padding-right: 15px;">
 					<div class="panel panel-default">
-						<div class="panel-heading">活动展示</div>
+						<div class="panel-heading">动态货源</div>
 						<div class="panel-body">
-							活动展示信息区
+							<div class="row">
+								<div class="col-sm-12 col-md-6 col-lg-6 ">
+									<ul class="nav nav-pills nav-stacked" role="tablist">
+										<li role="presentation"><a>深圳市&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;上海市&nbsp;<b>0.44</b>元/公斤&nbsp;120元/立方&nbsp;<span class="pull-right">新邦物流</span></a></li>
+									</ul>
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-6 ">
+									<ul class="nav nav-pills nav-stacked" role="tablist">
+										<li role="presentation"><a>深圳市&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;上海市&nbsp;<b>0.44</b>元/公斤&nbsp;120元/立方&nbsp;<span class="pull-right">新邦物流</span></a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -198,6 +209,15 @@
 									<div class="col-sm-2 col-md-3 col-lg-3 ">北京</div>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row" style="padding-top: 10px;padding-left: 15px;padding-right: 15px;">
+					<div class="panel panel-default">
+						<div class="panel-heading">活动展示</div>
+						<div class="panel-body">
+							活动展示信息区
 						</div>
 					</div>
 				</div>
