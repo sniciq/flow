@@ -115,9 +115,9 @@
 			<version>3.3.2</version>
 		</dependency>
 		<dependency>
-			<groupId>commons-collections</groupId>
-			<artifactId>commons-collections</artifactId>
-			<version>3.2.1</version>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-beanutils</groupId>
@@ -134,7 +134,12 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.34</version>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>com.octo.captcha</groupId>
+			<artifactId>jcaptcha-all</artifactId>
+			<version>1.0-RC6</version>
+		</dependency>
 	</dependencies>
   <build>
     <finalName>flow</finalName>
