@@ -7,7 +7,7 @@ myApp.controller('MainCtrl', function($scope, $modal, $log){
 	
 	$scope.openLogin = function() {
 		var modalInstance = $modal.open({
-			templateUrl: 'views/login.tpl.html?' + sysVersion,
+			templateUrl: 'views/login.tpl.html?v=' + sysVersion,
 			controller: 'LoginCtrl',
 			backdrop: 'static',
 			size: 'sm',
@@ -27,7 +27,7 @@ myApp.controller('MainCtrl', function($scope, $modal, $log){
 	
 	$scope.regist = function() {
 		var modalInstance = $modal.open({
-			templateUrl: 'views/regist.tpl.html?' + sysVersion,
+			templateUrl: 'views/regist.tpl.html?v=' + sysVersion,
 			controller: 'SelectRegistCtrl',
 			backdrop: 'static',
 			size: 'sm',
@@ -58,10 +58,12 @@ myApp.controller('SelectRegistCtrl', function($scope, $modalInstance, items){
 			item: $scope.items[0]
 	};
 	$scope.registCompany = function() {
-		window.open('views/regist_company.html');
+		window.open('views/regist_company.html?v=' + sysVersion);
+		$modalInstance.dismiss('cancel');
 	};
 	$scope.registPerson = function() {
-		window.open('views/regist_person.html');
+		window.open('views/regist_person.html?v=' + sysVersion);
+		$modalInstance.dismiss('cancel');
 	};
 	$scope.cancel = function() {
 		$modalInstance.dismiss('cancel');

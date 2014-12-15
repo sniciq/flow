@@ -21,7 +21,7 @@
 			var sysVersion = '${sysVersion}';
 		</script>
 		
-		<script src="${ctx}/resources/js/angular/angular.js"></script>
+		<script src="${ctx}/resources/js/angular/angular.js?v=${sysVersion}"></script>
 		<script src="${ctx}/resources/js/angular/ui-bootstrap-tpls-0.12.0.min.js"></script>
     	<script src="${ctx}/ctrl/app.js?v=${version}"></script>
 	</head>
