@@ -11,7 +11,66 @@
 		<script src="../resources/js/angular/ui-bootstrap-tpls-0.12.0.min.js"></script>
     	<script src="../ctrl/registApp.js"></script>
 	</head>
-	<body ng-controller="RegistPersonCtrl">
-		{{type}}
+	<body ng-controller="RegistCompanyCtrl">
+		<div role="main" class="container">
+			<h2 class="text-center">注册为个人会员</h2>
+			<hr>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 col-sm-offset-2 control-label">登录名</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="inputEmail" placeholder="登录名">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 col-sm-offset-2 control-label">密码</label>
+					<div class="col-sm-4">
+						<input type="password" class="form-control" id="inputEmail" placeholder="密码">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 col-sm-offset-2 control-label">确认密码</label>
+					<div class="col-sm-4">
+						<input type="password" class="form-control" id="inputEmail" placeholder="确认密码">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 col-sm-offset-2 control-label">验证码</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="inputEmail" placeholder="验证码">
+					</div>
+					<div class="col-sm-2">
+						<img ng-src="{{verifyCodeUrl}}" style="cursor: pointer;" ng-click="refreshVerificationCode();">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 col-sm-offset-2 control-label">手机号</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="inputEmail" placeholder="手机号">
+					</div>
+					<div class="col-sm-2">
+						<button type="button" class="btn btn-primary">获取验证码</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 col-sm-offset-2 control-label">手机验证码</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="inputEmail" placeholder="手机验证码">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 col-sm-offset-2 control-label">会员名</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="inputEmail" placeholder="会员名">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-2 col-sm-offset-4">
+						<button type="button" class="btn btn-danger btn-lg btn-block">注册</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		
 	</body>
 </html>

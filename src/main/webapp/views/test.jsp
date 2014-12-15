@@ -8,41 +8,21 @@
 		<title>App</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		
-		
-		<link rel="stylesheet" href="${ctx}/resources/css/bootstrap/3.3.0/css/bootstrap.min.css"/>
-		
-		<script src="${ctx}/resources/js/jquery/jquery-1.11.1.js"></script>
-		<script src="${ctx}/resources/css/bootstrap/3.3.0/js/bootstrap.js"></script>
-		
-		<script type="text/javascript">
-			$(function() {
-				$('#myTab a').tab('show');
-				
-				$('#myTab a').click(function (e) {
-				  e.preventDefault();
-				  $(this).tab('show');
-				})
-			});
-		</script>
 	</head>
 	
-	<body>
-		<div id="myTab">
-			<ul class="nav nav-tabs" role="tablist">
-			  <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-			  <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
-			  <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
-			  <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
-			</ul>
-			
-			<!-- Tab panes -->
-			<div class="tab-content">
-			  <div role="tabpanel" class="tab-pane active" id="home">.1..</div>
-			  <div role="tabpanel" class="tab-pane" id="profile">..2.</div>
-			  <div role="tabpanel" class="tab-pane" id="messages">..3.</div>
-			  <div role="tabpanel" class="tab-pane" id="settings">..4.</div>
-			</div>
-		</div>
+	<body style="font-size:12px;">
+		由于其他订单已经下单，有部分点位被系统自动取消，请您调整投放计划，具体信息见下。 <br/>
+		<table>
+			<tr>
+			    <th>排期id</th>
+			    <th>排期名称</th>
+			    <th>点位日期描述信息</th>
+			  </tr>
+			  <tr>
+			    <td>是在地地地地地</td>
+			    <td>是在地地地地地</td>
+			    <td>是在地地地地地</td>
+			  </tr>
+		</table>
 	</body>
 </html>
