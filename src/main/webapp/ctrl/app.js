@@ -37,6 +37,10 @@ myApp.controller('MainCtrl', function($scope, $modal, $log){
 				}
 			}
 		});
+	};
+	
+	$scope.openRouteSearch = function() {
+		window.open('views/route_search.jsp');
 	}
 });
 myApp.controller('LoginCtrl', function($scope, $modalInstance, items){
