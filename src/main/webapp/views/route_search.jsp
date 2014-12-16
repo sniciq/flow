@@ -79,6 +79,11 @@
 							<button type="button" class="btn btn-primary">查询</button>
 						</div>
 					</div>
+					<div class="form-group">
+						<div collapse="isCollapsed" class="col-sm-5 col-sm-offset-3">
+							<div class="well well-lg">地区选择</div> 
+						</div>
+					</div>
 				</form>
 				
 				<tabset>
