@@ -22,7 +22,7 @@
 		</script>
 		<script src="${ctx}/resources/js/angular/angular.js?v=${sysVersion}"></script>
 		<script src="${ctx}/resources/js/angular/ui-bootstrap-tpls-0.12.0.min.js"></script>
-    	<script src="${ctx}/ctrl/RouteSearch.js?v=${version}"></script>
+    	<script src="${ctx}/ctrl/RouteSearch.js?v=${sysVersion}"></script>
 	</head>
 	
 	<body ng-controller="RouteSearchCtrl">
@@ -69,21 +69,47 @@
 					<div class="form-group">
 						<label for="inputEmail" class="col-sm-1 col-sm-offset-2 control-label">开始</label>
 						<div class="col-sm-2">
-							<input type="text" class="form-control" id="inputEmail" placeholder="开始" ng-focus="cityFocus();" ng-blur="cityBlur();">
+							<input type="text" class="form-control" id="inputEmail" placeholder="开始" ng-click="selectArea({ev: $event});">
 						</div>
 						<label for="inputEmail" class="col-sm-1 control-label">结束</label>
 						<div class="col-sm-2">
-							<input type="text" class="form-control" id="inputEmail" placeholder="结束">
+							<input type="text" class="form-control" id="inputEmail" placeholder="结束" ng-click="selectArea({ev: $event});">
 						</div>
 						<div class="col-sm-2">
 							<button type="button" class="btn btn-primary">查询</button>
 						</div>
 					</div>
-					<div class="form-group">
-						<div collapse="isCollapsed" class="col-sm-5 col-sm-offset-3">
-							<div class="well well-lg">地区选择</div> 
+					<div>
+						<div ng-style="areaLocationCSS" collapse="!areaSelectVisable" class="panel panel-default">
+							<tabset justified="false">
+							    <tab heading="常用">
+							    	<div class="row">
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+									</div>
+							    </tab>
+							    <tab heading="省">
+							    	<div class="row">
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+										<div class="col-md-3">北京</div>
+									</div>
+							    </tab>
+							    <tab heading="市">Long Labeled Justified content</tab>
+							    <tab heading="区县">Long Labeled Justified content</tab>
+							  </tabset>
 						</div>
 					</div>
+					
 				</form>
 				
 				<tabset>
