@@ -32,4 +32,8 @@ RouteSearchApp.controller('RouteSearchCtrl', function($scope, $modal, $log){
 		window.location.href = ctx + '/';
 	}
 	
+	$scope.toOrder = function() {
+		window.location.href = ctx + '/route/toorder';
+	}
+	
 });

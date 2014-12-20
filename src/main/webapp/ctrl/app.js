@@ -42,6 +42,9 @@ myApp.controller('MainCtrl', function($scope, $modal, $log){
 	$scope.openRouteSearch = function() {
 		window.open('route/search');
 	}
+	$scope.openFillOrder = function() {
+		window.open('order/fillorder');
+	}
 });
 myApp.controller('LoginCtrl', function($scope, $modalInstance, items){
 	$scope.items = items;

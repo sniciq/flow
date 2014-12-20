@@ -210,7 +210,7 @@
 											<div class="col-sm-2 text-right"><b style="font-size: 18px;color: #F00">2天</b><br>零担汽运专线</div>
 											<div class="col-sm-2 text-left">重货：<b style="font-size: 18px;color: #F00">0.3 </b>元/公斤<br>轻货：100 元/立方<br>最低一票：40元</div>
 											<div class="col-sm-2" style="padding-top: 10px;">最近成交6笔 <br>6条评价</div>
-											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary">发 货</button></div>
+											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary" ng-click="toOrder()">发 货</button></div>
 										</div>
 									</div>
 								</div>
@@ -222,7 +222,7 @@
 											<div class="col-sm-2 text-right"><b style="font-size: 18px;color: #F00">2天</b><br>零担汽运专线</div>
 											<div class="col-sm-2 text-left">重货：<b style="font-size: 18px;color: #F00">0.3 </b>元/公斤<br>轻货：100 元/立方<br>最低一票：40元</div>
 											<div class="col-sm-2" style="padding-top: 10px;">最近成交6笔 <br>6条评价</div>
-											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary">发 货</button></div>
+											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary" ng-click="toOrder()">发 货</button></div>
 										</div>
 									</div>
 								</div>
@@ -234,7 +234,7 @@
 											<div class="col-sm-2 text-right"><b style="font-size: 18px;color: #F00">2天</b><br>零担汽运专线</div>
 											<div class="col-sm-2 text-left">重货：<b style="font-size: 18px;color: #F00">0.3 </b>元/公斤<br>轻货：100 元/立方<br>最低一票：40元</div>
 											<div class="col-sm-2" style="padding-top: 10px;">最近成交6笔 <br>6条评价</div>
-											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary">发 货</button></div>
+											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary" ng-click="toOrder()">发 货</button></div>
 										</div>
 									</div>
 								</div>
@@ -246,7 +246,7 @@
 											<div class="col-sm-2 text-right"><b style="font-size: 18px;color: #F00">2天</b><br>零担汽运专线</div>
 											<div class="col-sm-2 text-left">重货：<b style="font-size: 18px;color: #F00">0.3 </b>元/公斤<br>轻货：100 元/立方<br>最低一票：40元</div>
 											<div class="col-sm-2" style="padding-top: 10px;">最近成交6笔 <br>6条评价</div>
-											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary">发 货</button></div>
+											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary" ng-click="toOrder()">发 货</button></div>
 										</div>
 									</div>
 								</div>
@@ -258,7 +258,7 @@
 											<div class="col-sm-2 text-right"><b style="font-size: 18px;color: #F00">2天</b><br>零担汽运专线</div>
 											<div class="col-sm-2 text-left">重货：<b style="font-size: 18px;color: #F00">0.3 </b>元/公斤<br>轻货：100 元/立方<br>最低一票：40元</div>
 											<div class="col-sm-2" style="padding-top: 10px;">最近成交6笔 <br>6条评价</div>
-											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary">发 货</button></div>
+											<div class="col-sm-1" style="padding-top: 15px;"><button type="button" class="btn btn-primary" ng-click="toOrder()">发 货</button></div>
 										</div>
 									</div>
 								</div>

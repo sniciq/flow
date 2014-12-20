@@ -1,0 +1,58 @@
+<div class="modal-header">
+	<div class="row">
+		<div class="col-sm-7">
+			<h3 class="modal-title">完善发货信息</h3>
+		</div>
+		<div class="col-sm-5">
+			<button type="button" class="close" ng-click="cancel()"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		</div>
+	</div>
+</div>
+<div class="modal-body">
+	<div class="row">
+		<div class="col-sm-3">
+			重货：	0.600.60元/公斤
+轻货：	126126元/立方米
+预估总额：	未知
+(预估需填写重量或体积)
+含：	运费（未知）
+ 	
+上门接货（包接货费）
+短信通知（免费）
+燃油附加（2元）
+保费： －　元
+		</div>
+		<div class="col-sm-9">
+			
+			<form class="form-horizontal" role="form">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					    <h3 class="panel-title">选择网点</h3>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					    <h3 class="panel-title">货物信息 </h3>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					    <h3 class="panel-title">增值服务收费标准</h3>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					    <h3 class="panel-title">货物保险投保协议</h3>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row col-sm-offset-4">
+		<button  type="button" class="btn btn-primary" ng-click="selectRoute();">提交运单</button>
+		<button type="button" class="btn btn-link">预览 </button>
+		<button type="button" class="btn btn-link">取消</button>
+	</div>
+	
+	
+</div>

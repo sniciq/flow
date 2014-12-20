@@ -9,6 +9,10 @@
 
 	<mvc:view-controller path="/" view-name="app.jsp"/>
 	<mvc:view-controller path="/route/search" view-name="route_search.jsp"/>
+	<mvc:view-controller path="/route/toorder" view-name="route_to_order.jsp"/>
+	<mvc:view-controller path="/order/fillorder" view-name="fill_order.jsp"/>
+	<mvc:view-controller path="/route/select" view-name="fill_order_selectRoute.jsp"/>
+	
 	
 
 	<context:component-scan base-package="com.flow.controller" />

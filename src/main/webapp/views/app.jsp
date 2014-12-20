@@ -44,7 +44,7 @@
 		                    <a role="button" class="navbar-brand active">360 flow</a>
 		                    <li><a ng-click="openRouteSearch();">查询路线</a></li>
 		                    <li><a href="#getting_started">我的物流</a></li>
-		                    <li><a href="#getting_started">我要发货</a></li>
+		                    <li><a ng-click="openFillOrder();"">我要发货</a></li>
 		                    <li><a href="#getting_started">查询网点</a></li>
 		                    <li><a href="#getting_started">物流跟踪</a></li>
 		                    <li class="dropdown" dropdown>
