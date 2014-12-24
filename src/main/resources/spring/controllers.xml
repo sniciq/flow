@@ -12,6 +12,7 @@
 	<mvc:view-controller path="/route/toorder" view-name="route_to_order.jsp"/>
 	<mvc:view-controller path="/order/fillorder" view-name="fill_order.jsp"/>
 	<mvc:view-controller path="/route/select" view-name="fill_order_selectRoute.jsp"/>
+	<mvc:view-controller path="/myflow/myflow" view-name="myflow/myflow.jsp"/>
 	
 	
 

@@ -9,7 +9,8 @@
 <!DOCTYPE html>
 <html ng-app="RouteSearchApp">
 	<head>
-		<title>Route</title>
+		<title>线路查询</title>
+		<link rel="Shortcut Icon" href="${ctx}/resources/images/flow.png" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		
@@ -22,6 +23,7 @@
 		</script>
 		<script src="${ctx}/resources/js/angular/angular.js?v=${sysVersion}"></script>
 		<script src="${ctx}/resources/js/angular/ui-bootstrap-tpls-0.12.0.min.js"></script>
+		<script src="${ctx}/ctrl/util/AreaSelector.js?v=${sysVersion}"></script>
     	<script src="${ctx}/ctrl/RouteSearch.js?v=${sysVersion}"></script>
 	</head>
 	
@@ -41,22 +43,11 @@
 		            <nav class="hidden-xs">
 		                <ul class="nav navbar-nav">
 		                    <a role="button" class="navbar-brand" ng-click="toHome();">360 flow</a>
-		                    <li class="active"><a href="#getting_started">查询路线</a></li>
-		                    <li><a href="#getting_started">我的物流</a></li>
-		                    <li><a href="#getting_started">我要发货</a></li>
+		                    <li><a ng-click="openMyflow();">我的物流</a></li>
+		                    <li><a ng-click="openFillOrder();"">我要发货</a></li>
+		                    <li class="active"><a ng-click="openRouteSearch();">查询路线</a></li>
 		                    <li><a href="#getting_started">查询网点</a></li>
 		                    <li><a href="#getting_started">物流跟踪</a></li>
-		                    <li class="dropdown" dropdown>
-		                        <a role="button" class="dropdown-toggle" dropdown-toggle>
-		                            	我的菜单 <b class="caret"></b>
-		                        </a>
-		                        <ul class="dropdown-menu">
-		                            <li><a href="#accordion">入库</a></li>
-		                            <li><a href="#accordion">出库</a></li>
-		                            <li><a href="#accordion">查询</a></li>
-		                            <li><a href="#accordion">反馈</a></li>
-		                        </ul>
-		                    </li>
 		                </ul>
 		            </nav>
 		        </div>
@@ -67,13 +58,16 @@
 			<div class="container">
 				<form class="form-horizontal" role="form">
 					<div class="form-group">
-						<label for="inputEmail" class="col-sm-1 col-sm-offset-2 control-label">开始</label>
-						<div class="col-sm-2">
-							<input type="text" class="form-control" id="inputEmail" placeholder="开始" ng-click="selectArea({ev: $event});">
+						<label for="areaFrom" class="col-sm-1 col-sm-offset-2 control-label">发货地</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" id="areaFrom" ng-model="areaFrom" placeholder="开始" ng-click="areaFromDialogIsHidden=false">
+							<my-dialog directive-hidden="areaFromDialogIsHidden" ng-hide="areaFromDialogIsHidden" on-close="areaFromDialogIsHidden=true" my-directive-var="areaFrom" ></my-dialog>
 						</div>
-						<label for="inputEmail" class="col-sm-1 control-label">结束</label>
-						<div class="col-sm-2">
-							<input type="text" class="form-control" id="inputEmail" placeholder="结束" ng-click="selectArea({ev: $event});">
+						
+						<label for="areaTo" class="col-sm-1 control-label">收货地</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" id="areaTo" ng-model="areaTo" placeholder="结束" ng-click="areaToDialogIsHidden=false">
+							<my-dialog directive-hidden="areaToDialogIsHidden" ng-hide="areaToDialogIsHidden" on-close="areaToDialogIsHidden=true" my-directive-var="areaTo" ></my-dialog>
 						</div>
 						<div class="col-sm-2">
 							<button type="button" class="btn btn-primary">查询</button>

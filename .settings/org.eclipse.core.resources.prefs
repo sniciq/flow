@@ -1,4 +1,8 @@
 eclipse.preferences.version=1
 encoding//src/main/webapp/views/fill_order_commit.tpl.html=UTF-8
 encoding//src/main/webapp/views/login.tpl.html=UTF-8
+encoding//src/main/webapp/views/myflow/complaints.tpl.html=UTF-8
+encoding//src/main/webapp/views/myflow/myorders.tpl.html=UTF-8
+encoding//src/main/webapp/views/myflow/score.tpl.html=UTF-8
+encoding//src/main/webapp/views/test/AreaSelector.tpl.html=UTF-8
 encoding/<project>=UTF-8

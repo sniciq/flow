@@ -10,6 +10,7 @@
 <html ng-app="OrderApp">
 	<head>
 		<title>在线下单</title>
+		<link rel="Shortcut Icon" href="${ctx}/resources/images/flow.png" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		
@@ -45,44 +46,44 @@
 				<form class="form-horizontal" role="form">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-						    <h3 class="panel-title">发货方，填写完整、准确信息，物流跟进更及时</h3>
+						    <h3 class="panel-title">发货方</h3>
 						</div>
 						<div class="panel-body">
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 联系人：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 联系人：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
-								<div class="col-sm-2">
+								<div class="col-md-2">
 									<label class="checkbox-inline">
 										<input type="checkbox" id="inlineCheckbox1" value="option1"> 保存到通讯录
 									</label>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 公司：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 公司：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 所在区县：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 所在区县：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 街道地址：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 街道地址：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
-								<div class="col-sm-2">
+								<div class="col-md-2">
 									<p class="form-control-static text-left">不需要重复填写省/市/区</p>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 联系电话：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 联系电话：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
 							</div>
@@ -90,44 +91,44 @@
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
-						    <h3 class="panel-title">收货方, 为了您货物安全，请填写完整、准确信息</h3>
+						    <h3 class="panel-title">收货方</h3>
 						</div>
 						<div class="panel-body">
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 联系人：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 联系人：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
-								<div class="col-sm-2">
+								<div class="col-md-2">
 									<label class="checkbox-inline">
 										<input type="checkbox" id="inlineCheckbox1" value="option1"> 保存到通讯录
 									</label>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 公司：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 公司：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 所在区县：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 所在区县：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 街道地址：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 街道地址：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
-								<div class="col-sm-2">
+								<div class="col-md-2">
 									<p class="form-control-static text-left">不需要重复填写省/市/区</p>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 联系电话：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 联系电话：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
 							</div>
@@ -139,17 +140,17 @@
 						</div>
 						<div class="panel-body">
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 货物名称：</label>
-								<div class="col-sm-4">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 货物名称：</label>
+								<div class="col-md-4">
 									<input type="text" class="form-control" id="inputEmail" placeholder="">
 								</div>
-								<div class="col-sm-2">
+								<div class="col-md-2">
 									<button type="button" class="btn btn-link">禁运品说明</button>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label"><span style="color: red;">*</span> 包装总件数：	</label>
-								<div class="col-sm-2">
+								<label for="inputEmail" class="col-md-2 control-label"><span style="color: red;">*</span> 包装总件数：	</label>
+								<div class="col-md-2">
 									<div class="input-group">
 								      <input class="form-control" type="email" placeholder="">
 								      <div class="input-group-addon">件</div>
@@ -157,30 +158,30 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail" class="col-sm-2 control-label">总重量：	</label>
-								<div class="col-sm-2">
+								<label for="inputEmail" class="col-md-2 control-label">总重量：	</label>
+								<div class="col-md-2">
 									<div class="input-group">
 								      <input class="form-control" type="email" placeholder="">
 								      <div class="input-group-addon">公斤</div>
 								    </div>
 								</div>
-								<div class="col-sm-1">
+								<div class="col-md-1">
 									<p class="form-control-static text-center"> 或</p>
 								</div>
-								<label for="inputEmail" class="col-sm-1 control-label">总体积：	</label>
-								<div class="col-sm-2">
+								<label for="inputEmail" class="col-md-1 control-label">总体积：	</label>
+								<div class="col-md-2">
 									<div class="input-group">
 								      <input class="form-control" type="email" placeholder="">
 								      <div class="input-group-addon">立方米</div>
 								    </div>
 								</div>
-								<div class="col-sm-2">
+								<div class="col-md-2">
 									<p class="form-control-static text-left">用于估算运费</p>
 								</div>
   							</div>
   							<div class="form-group">
-  								<label for="inputEmail" class="col-sm-2 control-label">注意事项：</label>
-  								<div class="col-sm-6">
+  								<label for="inputEmail" class="col-md-2 control-label">注意事项：</label>
+  								<div class="col-md-6">
   									<textarea class="form-control" rows="3"></textarea>
   								</div>
   								
@@ -192,7 +193,7 @@
 						    <h3 class="panel-title">支付方式</h3>
 						</div>
 						<div class="panel-body">
-							<div class=" col-sm-offset-1 col-sm-8">
+							<div class=" col-md-offset-1 col-md-8">
 								<label class="radio-inline">
 								  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 发货人支付（现付）
 								</label>
@@ -203,7 +204,7 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<div class="col-sm-2 col-sm-offset-4">
+						<div class="col-md-2 col-md-offset-4">
 							<button type="button" class="btn btn-primary" ng-click="selectRoute();">下一步</button>
 						</div>
 					</div>

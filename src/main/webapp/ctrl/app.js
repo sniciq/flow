@@ -45,6 +45,9 @@ myApp.controller('MainCtrl', function($scope, $modal, $log){
 	$scope.openFillOrder = function() {
 		window.open('order/fillorder');
 	}
+	$scope.openMyflow = function() {
+		window.open('myflow/myflow');
+	}
 });
 myApp.controller('LoginCtrl', function($scope, $modalInstance, items){
 	$scope.items = items;

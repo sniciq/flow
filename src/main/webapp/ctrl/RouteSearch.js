@@ -1,33 +1,18 @@
-var RouteSearchApp = angular.module('RouteSearchApp', ['ui.bootstrap']);
+var RouteSearchApp = angular.module('RouteSearchApp', ['ui.bootstrap','util.eddy.AreaSelector']);
 
 RouteSearchApp.controller('RouteSearchCtrl', function($scope, $modal, $log){
-	$scope.areaSelectVisable = false;
-	$scope.areaLocationCSS = {width:'300px'};
+	$scope.areaFromDialogIsHidden = true;
+	$scope.areaToDialogIsHidden = true;
 	
-	$scope.endArea = {
-	    isopen: false
-	  };
-	$scope.searchObj = {area: '请选择城市'}
-	
-	$scope.selectArea = function(evObjec) {
-		$scope.areaSelectVisable = true;
-		$scope.areaLocationCSS =  {
-			width:'300px', 
-			left: (evObjec.ev.clientX - 370)  + 'px', 
-			position:'relative',
-			border: '1px;'
-		};
+	$scope.openRouteSearch = function() {
+		window.location.href = ctx + '/route/search';
 	}
-	
-	$scope.cityBlur = function() {
-		console.log(2)
-		//$scope.areaSelectVisable = true;
+	$scope.openFillOrder = function() {
+		window.location.href = ctx + '/order/fillorder';
 	}
-	
-	$scope.selectAreaOK = function() {
-		$scope.areaSelectVisable = false;
+	$scope.openMyflow = function() {
+		window.location.href = ctx + '/myflow/myflow';
 	}
-	
 	$scope.toHome = function() {
 		window.location.href = ctx + '/';
 	}

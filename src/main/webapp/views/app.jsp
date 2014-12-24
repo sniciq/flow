@@ -9,7 +9,8 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 	<head>
-		<title>App</title>
+		<title>360 flow</title>
+		<link rel="Shortcut Icon" href="${ctx}/resources/images/flow.png" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		
@@ -23,7 +24,7 @@
 		
 		<script src="${ctx}/resources/js/angular/angular.js?v=${sysVersion}"></script>
 		<script src="${ctx}/resources/js/angular/ui-bootstrap-tpls-0.12.0.min.js"></script>
-    	<script src="${ctx}/ctrl/app.js?v=${version}"></script>
+    	<script src="${ctx}/ctrl/app.js?v=${sysVersion}"></script>
 	</head>
 
 	<body ng-controller="MainCtrl">
@@ -41,23 +42,12 @@
 		            </div>
 		            <nav class="hidden-xs">
 		                <ul class="nav navbar-nav">
-		                    <a role="button" class="navbar-brand active">360 flow</a>
-		                    <li><a ng-click="openRouteSearch();">查询路线</a></li>
-		                    <li><a href="#getting_started">我的物流</a></li>
+		                    <li class="active"><a role="button" class="navbar-brand active">360 flow</a></li>
+		                    <li><a ng-click="openMyflow();">我的物流</a></li>
 		                    <li><a ng-click="openFillOrder();"">我要发货</a></li>
+		                    <li><a ng-click="openRouteSearch();">查询路线</a></li>
 		                    <li><a href="#getting_started">查询网点</a></li>
 		                    <li><a href="#getting_started">物流跟踪</a></li>
-		                    <li class="dropdown" dropdown>
-		                        <a role="button" class="dropdown-toggle" dropdown-toggle>
-		                            	我的菜单 <b class="caret"></b>
-		                        </a>
-		                        <ul class="dropdown-menu">
-		                            <li><a href="#accordion">入库</a></li>
-		                            <li><a href="#accordion">出库</a></li>
-		                            <li><a href="#accordion">查询</a></li>
-		                            <li><a href="#accordion">反馈</a></li>
-		                        </ul>
-		                    </li>
 		                </ul>
 		            </nav>
 		            <ul class="nav navbar-nav navbar-right">
